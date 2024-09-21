@@ -21,12 +21,8 @@ class Predict:
         return collection
 
     def preprocess_data(self) -> pl.LazyFrame:
-        # df = self.collection.find()
-        # df = pl.LazyFrame(df)
-        # temp code
-        df = pl.scan_csv(
-            os.path.join(str(Path(__file__).parents[1]), 'data', 'data_recruitment_selection_update.csv')
-        )
+        df = self.collection.find()
+        df = pl.LazyFrame(df)
 
         return df
 
