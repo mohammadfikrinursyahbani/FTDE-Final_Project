@@ -1,0 +1,12 @@
+data_warehouse:
+  outputs:
+    prod:
+      dbname: final_project
+      host: dev-fikri.my.id
+      pass: fikri
+      port: 5432
+      schema: dbt
+      threads: 1
+      type: postgres
+      user: fikri
+  target: prod

@@ -1,0 +1,66 @@
+[0m11:36:01.943609 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB02D5DB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB02D5F850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB02D5CA90>]}
+
+
+============================== 11:36:01.947606 | da729889-c4cf-4e91-987b-7dd8a15a6fbe ==============================
+[0m11:36:01.947606 [info ] [MainThread]: Running with dbt=1.8.6
+[0m11:36:01.947606 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Fikri Tech\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:36:12.668041 [debug] [MainThread]: Starter project path: C:\Users\Fikri Tech\anaconda3\envs\data_wrangler\Lib\site-packages\dbt\include\starter_project
+[0m11:36:12.733492 [info ] [MainThread]: 
+Your new dbt project "data_warehouse" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:36:12.736493 [info ] [MainThread]: Setting up your profile.
+[0m11:38:19.798420 [info ] [MainThread]: Profile data_warehouse written to C:\Users\Fikri Tech\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m11:38:19.838269 [debug] [MainThread]: Command `dbt init` succeeded at 11:38:19.799548 after 137.92 seconds
+[0m11:38:19.839285 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB7C70FB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB7C683E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB7C683CD0>]}
+[0m11:38:19.839285 [debug] [MainThread]: Flushing usage events
+[0m11:38:28.873531 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C119936650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C11995B150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C11997D490>]}
+
+
+============================== 11:38:28.877528 | 84352cd4-5e33-4721-85ed-add22f62f492 ==============================
+[0m11:38:28.877528 [info ] [MainThread]: Running with dbt=1.8.6
+[0m11:38:28.878530 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Fikri Tech\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt debug', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:38:28.894948 [info ] [MainThread]: dbt version: 1.8.6
+[0m11:38:28.895946 [info ] [MainThread]: python version: 3.11.9
+[0m11:38:28.895946 [info ] [MainThread]: python path: C:\Users\Fikri Tech\anaconda3\envs\data_wrangler\python.exe
+[0m11:38:28.896955 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m11:38:28.901943 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m11:38:28.950529 [info ] [MainThread]: Using profiles dir at C:\Users\Fikri Tech\.dbt
+[0m11:38:28.951528 [info ] [MainThread]: Using profiles.yml file at C:\Users\Fikri Tech\.dbt\profiles.yml
+[0m11:38:28.952035 [info ] [MainThread]: Using dbt_project.yml file at D:\Data Engineering Series\FastTrackDaTaEngineer\Final Project\dbt_project.yml
+[0m11:38:28.952035 [info ] [MainThread]: Configuration:
+[0m11:38:28.953042 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m11:38:28.954041 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m11:38:28.954041 [info ] [MainThread]: Required dependencies:
+[0m11:38:28.955042 [debug] [MainThread]: Executing "git --help"
+[0m11:38:28.995041 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:38:28.996042 [debug] [MainThread]: STDERR: "b''"
+[0m11:38:28.996042 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:38:28.997042 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m11:38:28.998041 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m11:38:28.998041 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "data_pipeline", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+
+[0m11:38:28.999045 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <D:\Data Engineering Series\FastTrackDaTaEngineer\Final Project\dbt_project.yml> not found
+
+[0m11:38:29.001053 [debug] [MainThread]: Command `dbt debug` failed at 11:38:29.000051 after 0.19 seconds
+[0m11:38:29.001053 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C113353C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C113353D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C113353DD0>]}
+[0m11:38:29.001053 [debug] [MainThread]: Flushing usage events
