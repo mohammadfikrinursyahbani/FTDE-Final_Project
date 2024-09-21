@@ -10,5 +10,5 @@ SELECT
     p."EmployeeID",
     t."TrainingProgram",
     (p."FinishTraining" - p."StartTraining") AS TrainingDuration
-FROM {{ source('public', 'training') }} AS t
-JOIN {{ source('public', 'payroll') }} AS p ON t."TrainingID" = p."TrainingID"
+FROM {{ source('public', 'payroll') }} AS p
+LEFT JOIN {{ source('public', 'training') }} AS t ON t."TrainingID" = p."TrainingID"

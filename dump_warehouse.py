@@ -69,15 +69,23 @@ if __name__ == "__main__":
         .unique(subset = 'EmployeeID', keep='first')
         .join(
             (
-                df_training.with_row_index(offset=1)
+                df_training.join(
+                    (
+                        df_training
+                        .select(['TrainingProgram'])
+                        .unique(keep = 'first')
+                        .with_row_index(offset=1)
+                        .rename({'index' : 'TrainingID'})
+                        .cast({'TrainingID' : pl.Int32})
+                    ),
+                    on = 'TrainingProgram', how = 'left'
+                )
                 .rename(
                     {
-                        'index': 'TrainingID',
                         'StartDate' : 'StartTraining',
                         'EndDate' : 'FinishTraining'
                     }
                 )
-                .cast({'TrainingID': pl.Int32})
             ),
             on = 'EmployeeID', how = 'left',
             suffix = 'Training'
