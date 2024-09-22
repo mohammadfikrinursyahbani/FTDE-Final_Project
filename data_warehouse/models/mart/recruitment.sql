@@ -7,6 +7,9 @@
 
 SELECT
     r."CandidateID",
+    r."Name",
+    r."Gender",
+    r."Position",
     r."ApplicationDate",
     r."InterviewDate",
     r."Status",
